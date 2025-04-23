@@ -1,12 +1,11 @@
 import './App.css';
-import {Login} from './components/Login.jsx'
+import Home from './Home';
 
 function App() {
   return (
 
     <>
-      <Login/>
-    
+      <Home/>
     </>
     
 );
