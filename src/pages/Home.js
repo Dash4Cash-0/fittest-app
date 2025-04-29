@@ -1,5 +1,5 @@
-import Login from './components/Login.jsx'
-import './css/home.css'
+import Login from '../components/Login.jsx'
+import '../css/home.css'
 
 function Home(){
   return (
