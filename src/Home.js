@@ -4,9 +4,10 @@ import './css/home.css'
 function Home(){
   return (
     <>
-      
+        <header>
+          <h1>Fittest</h1>
+        </header>
         <Login/>
-      
     </>
   )
 }
