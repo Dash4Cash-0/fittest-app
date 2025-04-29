@@ -28,3 +28,5 @@ function Registercard() {
   )
 
 }
+
+export default Registercard;
