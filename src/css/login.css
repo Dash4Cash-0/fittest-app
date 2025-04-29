@@ -40,11 +40,13 @@ h1 {
   }
 }
 
-.user-input{
-  display: row;
+p {
+  font-size: 40px;
+  color: #FFDEDE;
+
 }
 
-.user-input button {
+.login-register button {
   
   border-bottom-left-radius: 40%;
   border-top-right-radius: 40%;
@@ -53,10 +55,18 @@ h1 {
   height: 50px;
   width: 120px;
   margin-left: 4rem;
-  margin-top: 20rem;
+  margin-top: 7rem;
 }
+
+.user-input input {
+  height: 30px;
+  width: 80%;
+  border-top-right-radius: 80%;
+}
+
 
 h2 {
   display: flex;
   justify-content: center;
+  color: #FFDEDE;
 }
