@@ -76,3 +76,19 @@ h2 {
   font-weight: 400;
   font-style: normal;
 }
+
+
+@keyframes rotateOut {
+  from{
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotateY(360deg);
+    opacity: 0;
+  }
+}
+
+.login-card.animate-out{
+  animation: rotateOut 0.5s forwards;
+}

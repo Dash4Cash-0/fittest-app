@@ -4,15 +4,20 @@ import '../css/login.css'
 function Login(){
 
   const[visible, setVisible] = useState(false);
+  const[animation, setAnimation] = useState(false)
 
   const rotateShift = () => {
-    setVisible(true);
-  
+    setAnimation(true)
+    
+    setTimeout(() => {
+      setVisible(true)
+    },500)
   }
 
   return (
     <>
-      <div className="login-card" style={{display: visible ? 'none' : 'block'}}>
+      <div className={`login-card ${animation ? 'animate-out' : ''}`} style={{display: visible ? 'none' : 'block'}}>
+      
         <h2>Log in to your account</h2>
         <div className="user-input">
           
