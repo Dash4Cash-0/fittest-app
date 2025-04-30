@@ -1,4 +1,7 @@
-function Registercard() {
+import '../css/register.css'
+
+
+function Register() {
 
   return (
     <>
@@ -29,4 +32,4 @@ function Registercard() {
 
 }
 
-export default Registercard;
+export default Register;

@@ -1,11 +1,14 @@
 import './App.css';
-import Home from './pages/Home.js';
+import Login from './components/Login.jsx'
 
 function App() {
   return (
 
     <>
-      <Home/>
+      <header>
+          <h1>Fittest</h1>
+        </header>
+        <Login/>
     </>
     
 );
