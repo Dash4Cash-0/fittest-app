@@ -1,11 +1,12 @@
+
 import '../css/register.css'
 
+function Register({animating,hasInteracted, onBackClick, isVisible}) {
 
-function Register() {
 
   return (
     <>
-    <div className="register-card">
+    <div className={`register-card ${hasInteracted ? (animating ? 'animate-out' : 'animate-in') : ''}`} style={{display: isVisible ? 'block' : 'none'}}>
         <h2>Register a new account</h2>
         <form className="register-user">
         
@@ -24,7 +25,7 @@ function Register() {
       
           <div className="register-btns">
             <button type="submit" className="login-btn">Register</button>
-            <button type="submit" className="register-btn">Go back</button>
+            <button type="submit" className="goBack-btn" onClick={onBackClick}>Go back</button>
           </div>
         </div>
     </>

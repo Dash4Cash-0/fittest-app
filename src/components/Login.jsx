@@ -1,22 +1,11 @@
-import { useState } from 'react';
 import '../css/login.css'
 
-function Login(){
+function Login({animating, hasInteracted, onRegisterClick, isVisible}){
 
-  const[visible, setVisible] = useState(false);
-  const[animation, setAnimation] = useState(false)
-
-  const rotateShift = () => {
-    setAnimation(true)
-    
-    setTimeout(() => {
-      setVisible(true)
-    },500)
-  }
 
   return (
     <>
-      <div className={`login-card ${animation ? 'animate-out' : ''}`} style={{display: visible ? 'none' : 'block'}}>
+      <div className={`login-card ${hasInteracted ? (animating ? 'animate-out' : 'animate-in') : ''}`}style={{display: isVisible ? 'block' : 'none'}}>
       
         <h2>Log in to your account</h2>
         <div className="user-input">
@@ -28,7 +17,7 @@ function Login(){
           
           <div className="login-register">
             <button type="submit" className="login-btn" >Login</button>
-            <button type="submit" className="register-btn" onClick={rotateShift}>Register</button>
+            <button type="submit" className="register-btn" onClick={onRegisterClick}>Register</button>
           </div>
         </div>
       </div>
