@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
+import Dashboard from './pages/Dashboard.js';
 
 function App() {
   
@@ -52,6 +53,8 @@ function App() {
             onBackClick={goToLogin}
             isVisible={currentView === 'register'}/>
         )}
+
+        <Dashboard/>
           
     </>
     
