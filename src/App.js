@@ -17,6 +17,7 @@ function App() {
     setTimeout(() => {
       setCurrentView('register');
       setAnimating(false)
+      setHasInteracted(false)
     },200);
   }
 
@@ -27,6 +28,7 @@ function App() {
     setTimeout(() => {
       setCurrentView('login')
       setAnimating(false)
+      setHasInteracted(false)
     },200)
   }
   
