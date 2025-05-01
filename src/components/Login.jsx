@@ -1,7 +1,14 @@
 import '../css/login.css'
+import { useNavigate } from 'react-router-dom';
 
 function Login({animating, hasInteracted, onRegisterClick, isVisible}){
 
+ const navigate = useNavigate();
+
+ const goToDashboard = () => {
+  navigate('/dashboard')
+
+ }
 
   return (
     <>
@@ -16,7 +23,7 @@ function Login({animating, hasInteracted, onRegisterClick, isVisible}){
             <input type="password" className="password-input" required/>
           
           <div className="login-register">
-            <button type="submit" className="login-btn" >Login</button>
+            <button type="submit" className="login-btn" onClick={goToDashboard}>Login</button>
             <button type="submit" className="register-btn" onClick={onRegisterClick}>Register</button>
           </div>
         </div>
